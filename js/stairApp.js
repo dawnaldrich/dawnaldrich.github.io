@@ -4,64 +4,65 @@ var stairway = { //object for localstorage get
     userName: '',
     neighborhood: '',
     steps: '',
-    view: '',
-    park: ''
+    view: ''
 };
 
 var user = { // object for localstorage set
     userName: '',
     neighborhood: '',
     steps: '',
-    view: '',
-    park: ''
+    view: ''
 };
 
 
 var stairData = [ // hardcoded stairways
     {
-        stairName: "NE 135th St Stairway", neighborhood: "North", numSteps: 196, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/4514590"
+        stairName: "NE 135th St Stairway", neighborhood: "North", numSteps: 196, view: false, link: "http://www.communitywalk.com/location_info/388644/4514590"
     },
     {
-        stairName: "Maple Leaf and Thornton Creek Loop", neighborhood: "North", numSteps: 462, view: true, park: false, link: "http://seattlestairwaywalks.squarespace.com/blog/2011/5/25/maple-leaf-and-thornton-creek.html"
+        stairName: "Maple Leaf and Thornton Creek Loop", neighborhood: "North", numSteps: 462, view: true, link: "http://seattlestairwaywalks.squarespace.com/blog/2011/5/25/maple-leaf-and-thornton-creek.html"
     },
     {
-        stairName: "NE 95th St Stairway", neighborhood: "North", numSteps: 132, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3976921"
+        stairName: "NE 95th St Stairway", neighborhood: "North", numSteps: 132, view: false, link: "http://www.communitywalk.com/location_info/388644/3976921"
     },
     {
-        stairName: "Discovery Park North Bluff Stairway", neighborhood: "North", numSteps: 201, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/8961712"
+        stairName: "Discovery Park North Bluff Stairway", neighborhood: "North", numSteps: 201, view: false, link: "http://www.communitywalk.com/location_info/388644/8961712"
     },
     {
-        stairName: "Glenmont Stairway - Magnolia", neighborhood: "Central", numSteps: 202, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3942948"
+        stairName: "Glenmont Stairway - Magnolia", neighborhood: "Central", numSteps: 202, view: false, link: "http://www.communitywalk.com/location_info/388644/3942948"
     },
     {
-        stairName: "Blaine Stairway", neighborhood: "Central", numSteps: 293, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949647"
+        stairName: "Blaine Stairway", neighborhood: "Central", numSteps: 293, view: false, link: "http://www.communitywalk.com/location_info/388644/3949647"
     },
     {
-        stairName: "Pike Street Hill Climb", neighborhood: "Central", numSteps: 163, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949907"
+        stairName: "Pike Street Hill Climb", neighborhood: "Central", numSteps: 163, view: false, link: "http://www.communitywalk.com/location_info/388644/3949907"
     },
     {
-        stairName: "Thistle Stairway", neighborhood: "West", numSteps: 367, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/3935309"
+        stairName: "Thistle Stairway", neighborhood: "West", numSteps: 367, view: true, link: "http://www.communitywalk.com/location_info/388644/3935309"
     },
     {
-        stairName: "Dose Stairway", neighborhood: "West", numSteps: 138, view: true, park: false, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
+        stairName: "Dose Stairway", neighborhood: "West", numSteps: 138, view: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
     },
     {
-        stairName: "Ferdinand Stairway", neighborhood: "West", numSteps: 171, view: true, park: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
+        stairName: "Ferdinand Stairway", neighborhood: "West", numSteps: 171, view: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
     },
     {
-        stairName: "West Ferry Terminal", neighborhood: "Central", numSteps: 33, view: true, park: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
+        stairName: "West Ferry Terminal", neighborhood: "Central", numSteps: 33, view: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
     },
     {
-        stairName: "Howe Street Stairs", neighborhood: "Central", numSteps: 388, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949638"
+        stairName: "Howe Street Stairs", neighborhood: "Central", numSteps: 388, view: false, link: "http://www.communitywalk.com/location_info/388644/3949638"
     },
     {
-        stairName: "Cooper Stairway", neighborhood: "South", numSteps: 215, view: true, park: false, link: "http://www.communitywalk.com/location_info/388644/3975969"
+        stairName: "Cooper Stairway", neighborhood: "South", numSteps: 215, view: true, link: "http://www.communitywalk.com/location_info/388644/3975969"
     },
     {
-        stairName: "Lucille Stairway", neighborhood: "South", numSteps: 158, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3975969"
+        stairName: "Lucille Stairway", neighborhood: "South", numSteps: 158, view: false, link: "http://www.communitywalk.com/location_info/388644/3975969"
     },
     {
-        stairName: "Golden Gardens Park Stairway Trail", neighborhood: "North", numSteps: 119, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/3943253"
+        stairName: "Wilcox Wall", neighborhood: "Central", numSteps: 464, view: true, link: "http://qastairs.com/wilcox.html"
+    },
+    {
+        stairName: "Golden Gardens Park Stairway Trail", neighborhood: "North", numSteps: 119, view: false,  link: "http://www.communitywalk.com/location_info/388644/3943253"
     }
 
 ];
@@ -79,14 +80,12 @@ function getUserInfo(event) { //called on submit
     var neighborhood = document.getElementById("neighborhood").value;
     var steps = document.getElementById("steps").value;
     var view = document.getElementById("view").checked;
-    var park = document.getElementById("park").checked;
    
     //add object properties
     user.userName = userName;
     user.neighborhood = neighborhood;
     user.steps = steps;
     user.view = view;
-    user.park = park;
     localStorage.setItem('stairway', JSON.stringify(user));
     window.location = 'results.html';
 
@@ -101,8 +100,6 @@ function showStairs() { //triggered by results.html body onload
         var steps = parseInt(stairwayChoice.steps);
         var view = stairwayChoice.view;
         var viewYN;
-        var parkYN
-        var park = stairwayChoice.park;
 
         if (view) {
             var viewYN = "Yes";
@@ -110,20 +107,21 @@ function showStairs() { //triggered by results.html body onload
         else {
             var viewYN = "No";
         }
-        if (park) {
-            parkYN = "Yes"
-        }
-        else {
-            parkYN = "No";
-        }
+       
         var userContainer = document.getElementById('resultsContainer');
 
         var stairContainer = document.createElement('div');
         userContainer.appendChild(stairContainer);
         var pResults = document.createElement('p');
-        pResults.innerHTML = "Hello " + stairwayChoice.userName + "!  You have selected: <ul class=\'ulSelect'><li>Neighborhood: " + stairwayChoice.neighborhood + "</li >" +
-            "<li>Number of steps: " + (steps - 100) + " - " + steps + "</li><li>Prefer View?  " + viewYN + "</li>" +
-            "<li>Prefer park setting? " + parkYN + "</li></ul>";
+        var reportSteps;
+        if (steps == 249) {
+            reportSteps = "under 250"
+        }
+        else {
+            reportSteps = "250 plus";
+        }
+        pResults.innerHTML = "<span style='font-size:22px;'>Hello " + stairwayChoice.userName + "! You have selected:</span>  <ul class=\'ulSelect'><li>Neighborhood: " + stairwayChoice.neighborhood + "</li >" +
+            "<li>Number of steps: " + reportSteps + "</li><li>Prefer View?  " + viewYN + "</li></ul>";
             
         userContainer.appendChild(pResults);
 
@@ -139,63 +137,108 @@ function showStairs() { //triggered by results.html body onload
             var userLocation = stairData[i].neighborhood.toLowerCase();
             var nSteps = stairData[i].numSteps;
             var isView = stairData[i].view;
-            var isPark = stairData[i].park;
             var parkLink = stairData[i].link;
-            if (view) {
-                if (park) {
-                    if (userLocation == location && nSteps <= steps && nSteps >= steps - 100 && view === isView && park === isPark) {
-                        foundResult = true;
-                      //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
-                        if (oneH2 === 0) {
-                            var h2Results = document.createElement('h2');
-                            h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
-                            h2Results.setAttribute('class', 'h2Results');
-                            userContainer.appendChild(h2Results);
-                            var ulResults = document.createElement('ul');
-                            userContainer.appendChild(ulResults);
-
-                        }
-                        var liResults = document.createElement('li');
-                        ulResults.appendChild(liResults);
-                        liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
-                        // var divResults = document.createElement('div');
-                        oneH2++;
+            console.log(view);
+            console.log(location);
+            if (location == "all" && !view && steps == 249) {
+                console.log("1st if");
+                if (nSteps <= steps) {
+                    foundResult = true;
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    if (oneH2 === 0) {
+                        var h2Results = document.createElement('h2');
+                        h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
+                        h2Results.setAttribute('class', 'h2Results');
+                        userContainer.appendChild(h2Results);
+                        var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
+                        userContainer.appendChild(ulResults);
                     }
+                    var liResults = document.createElement('li');
+                    ulResults.appendChild(liResults);
+                    liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
+                    // var divResults = document.createElement('div');
+                    oneH2++;
+                }
                    // console.log("park and view");
-                }
-                else {
-                    if (userLocation == location && nSteps <= steps && nSteps >= steps - 100 && view === isView) {
-                        foundResult = true;
-                        console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
-                        if (oneH2 === 0) {
-                            var h2Results = document.createElement('h2');
-                            h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
-                            h2Results.setAttribute('class', 'h2Results');
-                            userContainer.appendChild(h2Results);
-                            var ulResults = document.createElement('ul');
-                            userContainer.appendChild(ulResults);
-
-                        }
-                        var liResults = document.createElement('li');
-                        ulResults.appendChild(liResults);
-                        liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
-                        // var divResults = document.createElement('div');
-                        oneH2++;
-                    }
-                  //  console.log("view");
-                }
-
             }
-            else if (park) {
-                if (userLocation == location && nSteps <= steps && nSteps >= steps - 100 && park === isPark) {
+            else if (location == "all" && !view && steps == 250) {
+                console.log("2nd if");
+                if (nSteps >= steps) {
                     foundResult = true;
-                    console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
                     if (oneH2 === 0) {
                         var h2Results = document.createElement('h2');
                         h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
                         h2Results.setAttribute('class', 'h2Results');
                         userContainer.appendChild(h2Results);
                         var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
+                        userContainer.appendChild(ulResults);
+                    }
+                    var liResults = document.createElement('li');
+                    ulResults.appendChild(liResults);
+                    liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
+                    // var divResults = document.createElement('div');
+                    oneH2++;
+                }
+            }
+            else if (location == "all" && view && steps == 249) {
+                console.log("3rd if");
+                if (nSteps <= steps && view === isView) {
+                    foundResult = true;
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    if (oneH2 === 0) {
+                        var h2Results = document.createElement('h2');
+                        h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
+                        h2Results.setAttribute('class', 'h2Results');
+                        userContainer.appendChild(h2Results);
+                        var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
+                        userContainer.appendChild(ulResults);
+                    }
+                    var liResults = document.createElement('li');
+                    ulResults.appendChild(liResults);
+                    liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
+                    // var divResults = document.createElement('div');
+                    oneH2++;
+                }
+            }
+            else if (location == "all" && view && steps == 250) {
+                console.log("4th if");
+                if (nSteps >= steps && view === isView) {
+                    foundResult = true;
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    if (oneH2 === 0) {
+                        var h2Results = document.createElement('h2');
+                        h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
+                        h2Results.setAttribute('class', 'h2Results');
+                        userContainer.appendChild(h2Results);
+                        var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
+                        userContainer.appendChild(ulResults);
+                    }
+                    var liResults = document.createElement('li');
+                    ulResults.appendChild(liResults);
+                    liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
+                    // var divResults = document.createElement('div');
+                    oneH2++;
+                }
+            }
+            else if (location !== "all" && !view && steps == 249)
+            {
+                console.log("fifth if");
+                if (userLocation == location && nSteps <= steps) {
+                   
+                    foundResult = true;
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    if (oneH2 === 0) {
+                        var h2Results = document.createElement('h2');
+                        h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
+                        h2Results.setAttribute('class', 'h2Results');
+                        userContainer.appendChild(h2Results);
+                        var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
                         userContainer.appendChild(ulResults);
 
                     }
@@ -205,38 +248,79 @@ function showStairs() { //triggered by results.html body onload
                     // var divResults = document.createElement('div');
                     oneH2++;
                 }
-               // console.log("park");
+                   // console.log("park and view");
             }
+            else if (location !== "all" && !view && steps == 250) {
+                console.log("6th if");
+                if (userLocation == location && nSteps >= steps) {
+                    foundResult = true;
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    if (oneH2 === 0) {
+                        var h2Results = document.createElement('h2');
+                        h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
+                        h2Results.setAttribute('class', 'h2Results');
+                        userContainer.appendChild(h2Results);
+                        var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
+                        userContainer.appendChild(ulResults);
 
+                    }
+                    var liResults = document.createElement('li');
+                    ulResults.appendChild(liResults);
+                    liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
+                    // var divResults = document.createElement('div');
+                    oneH2++;
+                }
+                   // console.log("park and view");
+            }
+            else if (location !== "all" && view && steps == 249) {
+                console.log("fifth if");
+                if (userLocation == location && nSteps <= steps && view === isView) {
+
+                    foundResult = true;
+                    //  console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
+                    if (oneH2 === 0) {
+                        var h2Results = document.createElement('h2');
+                        h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
+                        h2Results.setAttribute('class', 'h2Results');
+                        userContainer.appendChild(h2Results);
+                        var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
+                        userContainer.appendChild(ulResults);
+
+                    }
+                    var liResults = document.createElement('li');
+                    ulResults.appendChild(liResults);
+                    liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
+                    // var divResults = document.createElement('div');
+                    oneH2++;
+                }
+                // console.log("park and view");
+            }
             else {
-                if (userLocation == location && nSteps <= steps && nSteps >= steps - 100) {
+                console.log("6th if");
+                if (userLocation == location && nSteps >= steps && view === isView) {
                     foundResult = true;
-                    console.log(location + " " + nSteps + " " + steps + isView + isPark + stairData[i].stairName);
                     if (oneH2 === 0) {
                         var h2Results = document.createElement('h2');
                         h2Results.innerHTML = "Your criteria returned the following results. Happy climbing!";
                         h2Results.setAttribute('class', 'h2Results');
                         userContainer.appendChild(h2Results);
                         var ulResults = document.createElement('ul');
+                        ulResults.setAttribute('class', 'ulClimbs');
                         userContainer.appendChild(ulResults);
 
                     }
                     var liResults = document.createElement('li');
                     ulResults.appendChild(liResults);
                     liResults.innerHTML = "<a href=" + parkLink + " target=\'_blank'>" + stairData[i].stairName + "</a>";
-                    // var divResults = document.createElement('div');
+                    
                     oneH2++;
                 }
-            }
-           // console.log("neither selected");
-          
-           
-          //  console.log("view: " + view + " park: " + park)
               
-          
-             
-          
-
+            }
+           
+        
         }
         if (!foundResult) {
             var pNoResults = document.createElement('p');
