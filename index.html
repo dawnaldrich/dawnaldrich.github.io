@@ -21,27 +21,25 @@
                 <select id="neighborhood">
                 <option value='north'>North Seattle</option>
                 <option value='central'>Central Seattle</option>
-                <option value='westSouth'>West and South Seattle</option>
-                <option value='east'>East Seattle</option>
+                <option value='west'>West Seattle</option>
+                <option value='south'>South Seattle</option>
+                <option value='all'>All neighborhoods</option>
             </select>
             </div>
             <div class="formAreas">
              <p>Choose from a number of steps to determine level of difficulty</p>
             <select id="steps">
-                <option value='150'>less than 150 steps</option>
-                <option value='250'>150 - 250 steps</option>
-                <option value='350'>250 - 350 steps</option>
-                <option value='450'>350 - 450 steps</option>
-                <option value='550'>450 - 550 steps</option>
+                <option value='249'>< 250</option>
+                <option value='250'>250 plus</option>
             </select>
               
             </div>
-                <div class="formAreas" style="float:left; padding-right:35px;"> <p>Is a water view important to you? </p>
-                Yes <input type="radio" id="view" /> </div>
-                <div class="formAreas" style="float:left; "> <p>Would you like to start your climb in a park? </p>
-                Yes <input type="radio" id="park" /> </div>
+                <div class="formAreas"> <p>Is a water view important to you? </p>
+                Yes <input type="checkbox" id="view"/>
+                </div>
+               
             </div>
-             <div style="clear:both;"></div>
+            
             <div class="submitContainer"><input type="submit" id="btnSubmit" value="Submit"/></div>
            
         </form>

@@ -1,8 +1,7 @@
-﻿body
-{
-    font-family:'Century Gothic', Arial, Verdana;
-    color:#333;
-    font-size:16px;
+﻿body {
+    font-family: 'Century Gothic', Arial, Verdana;
+    color: #000;
+    font-size: 16px;
 }
 
 #wrapper{
@@ -17,8 +16,6 @@
     margin-bottom: 25px;
 }
 
-
-
 #header img{
     width:535px;
     height:88px;
@@ -27,34 +24,29 @@
 #formContainer {
     box-sizing: border-box;
     width: 100%;
-    background-color: #efefef;
-    padding:15px;
+    background-color: #f0fafc;
+    padding: 15px;
 }
 
 .resultsWrapper {
     box-sizing: border-box;
     width: 100%;
-    background-color: #efefef;
+    background-color: #f0fafc;
     padding: 15px;
-    min-height:500px;
+    min-height: 500px;
 }
 
-/*#tileContainer {
-    box-sizing: border-box;
-    width: 25%;
-}*/
+
 h1{
-    font-size:18pt;
+    font-size:22px;
     font-weight:300;
 }
 
-.formAreas{
-  
-}
 
 #btnSubmit {
    
     border: 1px solid #203c43;
+    background-color:#fff;
 }
 
 #tbName {
@@ -65,6 +57,7 @@ h1{
 
 input, select {
     color: #333;
+
 }
 
 input, select {
@@ -72,9 +65,8 @@ input, select {
 }
 
 .submitContainer{
-    width:100%;
-   
-    text-align:right;
+   width:100%;
+   text-align:right;
 }
 
 .hrLine {
@@ -100,5 +92,15 @@ image{
 .h2Results{
     font-weight:bold;
     font-size:16px;
+}
+
+
+.ulClimbs li{
+    padding-bottom:15px;
+    list-style-type:none;
+}
+
+#hike{
+   margin-top:25px;
 }
 
