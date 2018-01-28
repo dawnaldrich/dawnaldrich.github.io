@@ -19,33 +19,51 @@ var user = { // object for localstorage set
 
 var stairData = [ // hardcoded stairways
     {
-        stairName: "NE 135th St Stairway", neighborhood: "North", numSteps: 196, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/4514590"},
+        stairName: "NE 135th St Stairway", neighborhood: "North", numSteps: 196, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/4514590"
+    },
     {
-        stairName: "Maple Leaf and Thornton Creek Loop", neighborhood: "North", numSteps: 462, view: true, park: false, link: "http://seattlestairwaywalks.squarespace.com/blog/2011/5/25/maple-leaf-and-thornton-creek.html" },
+        stairName: "Maple Leaf and Thornton Creek Loop", neighborhood: "North", numSteps: 462, view: true, park: false, link: "http://seattlestairwaywalks.squarespace.com/blog/2011/5/25/maple-leaf-and-thornton-creek.html"
+    },
     {
-        stairName: "NE 95th St Stairway", neighborhood: "North", numSteps: 132, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3976921" },
+        stairName: "NE 95th St Stairway", neighborhood: "North", numSteps: 132, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3976921"
+    },
     {
-        stairName: "Discovery Park North Bluff Stairway", neighborhood: "North", numSteps: 201, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/8961712" },
+        stairName: "Discovery Park North Bluff Stairway", neighborhood: "North", numSteps: 201, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/8961712"
+    },
     {
-        stairName: "Glenmont Stairway - Magnolia", neighborhood: "Central", numSteps: 202, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3942948" },
+        stairName: "Glenmont Stairway - Magnolia", neighborhood: "Central", numSteps: 202, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3942948"
+    },
     {
-        stairName: "Blaine Stairway", neighborhood: "Central", numSteps: 293, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949647"},
+        stairName: "Blaine Stairway", neighborhood: "Central", numSteps: 293, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949647"
+    },
     {
-        stairName: "Pike Street Hill Climb", neighborhood: "Central", numSteps: 163, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949907"},
+        stairName: "Pike Street Hill Climb", neighborhood: "Central", numSteps: 163, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949907"
+    },
     {
-        stairName: "Thistle Stairway", neighborhood: "WestSouth", numSteps: 367, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/3935309"},
+        stairName: "Thistle Stairway", neighborhood: "West", numSteps: 367, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/3935309"
+    },
     {
-        stairName: "Dose Stairway", neighborhood: "WestSouth", numSteps: 138, view: true, park: false, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"}, 
+        stairName: "Dose Stairway", neighborhood: "West", numSteps: 138, view: true, park: false, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
+    },
     {
-        stairName: "Ferdinand Stairway", neighborhood: "WestSouth", numSteps: 171, view: true, park: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
+        stairName: "Ferdinand Stairway", neighborhood: "West", numSteps: 171, view: true, park: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
     },
     {
         stairName: "West Ferry Terminal", neighborhood: "Central", numSteps: 33, view: true, park: true, link: "http://www.seattlestairwaywalks.com/blog/tag/dose-terrace-stairs"
     },
     {
-        stairName: "Mercerdale Hillside Loop", neighborhood: "East", numSteps: 321, view: true, park: false, link: "http://seattlestairwaywalks.squarespace.com/blog/category/eastside-seattle"
+        stairName: "Howe Street Stairs", neighborhood: "Central", numSteps: 388, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3949638"
+    },
+    {
+        stairName: "Cooper Stairway", neighborhood: "South", numSteps: 215, view: true, park: false, link: "http://www.communitywalk.com/location_info/388644/3975969"
+    },
+    {
+        stairName: "Lucille Stairway", neighborhood: "South", numSteps: 158, view: false, park: false, link: "http://www.communitywalk.com/location_info/388644/3975969"
+    },
+    {
+        stairName: "Golden Gardens Park Stairway Trail", neighborhood: "North", numSteps: 119, view: false, park: true, link: "http://www.communitywalk.com/location_info/388644/3943253"
     }
-  
+
 ];
 
 
