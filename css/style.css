@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: 'Century Gothic', Arial, Verdana;
     color: #000;
     font-size: 16px;
@@ -24,14 +24,20 @@
 #formContainer {
     box-sizing: border-box;
     width: 100%;
-    background-color: #f0fafc;
+    background-color: #f5fbfc;
+    /*background-image: url('../images/background6.png');
+    background-repeat: no-repeat;
+    background-position: right 5px top;*/
     padding: 15px;
 }
 
 .resultsWrapper {
     box-sizing: border-box;
     width: 100%;
-    background-color: #f0fafc;
+    background-color: #f5fbfc;
+    /*background-image: url('../images/background6.png');
+    background-repeat: no-repeat;
+    background-position: right 5px top;*/
     padding: 15px;
     min-height: 500px;
 }
@@ -66,7 +72,8 @@ input, select {
 
 .submitContainer{
    width:100%;
-   text-align:right;
+   text-align:left;
+   margin-top:25px;
 }
 
 .hrLine {
