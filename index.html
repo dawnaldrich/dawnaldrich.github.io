@@ -1,1 +1,56 @@
-Hellow World
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Seattle Stairways</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="wrapper">
+    <div id="header"><div><img src="images/logo.png" /></div></div>
+        <div id="formContainer">
+        <h1>Welcome to your resource to Seattle area free workouts!</h1>
+       
+        <form id="userInput">
+            <div id="#name"><p>Enter your name</p><input id="tbName" type="text" placeholder="Full Name"  required /></div>
+            <div id="hike">
+            <p><em>Please select from the following options to find the best stair workout for you.</em></p>
+            <div class="formAreas">
+                <p>Select a location to start your climb</p>
+                <select id="neighborhood">
+                <option value='north'>North Seattle</option>
+                <option value='central'>Central Seattle</option>
+                <option value='westSouth'>West and South Seattle</option>
+                <option value='east'>East Seattle</option>
+            </select>
+            </div>
+            <div class="formAreas">
+             <p>Choose from a number of steps to determine level of difficulty</p>
+            <select id="steps">
+                <option value='150'>less than 150 steps</option>
+                <option value='250'>150 - 250 steps</option>
+                <option value='350'>250 - 350 steps</option>
+                <option value='450'>350 - 450 steps</option>
+                <option value='550'>450 - 550 steps</option>
+            </select>
+              
+            </div>
+                <div class="formAreas" style="float:left; padding-right:35px;"> <p>Is a water view important to you? </p>
+                Yes <input type="radio" id="view" /> </div>
+                <div class="formAreas" style="float:left; "> <p>Would you like to start your climb in a park? </p>
+                Yes <input type="radio" id="park" /> </div>
+            </div>
+             <div style="clear:both;"></div>
+            <div class="submitContainer"><input type="submit" id="btnSubmit" value="Submit"/></div>
+           
+        </form>
+    </div>
+     <hr class="hrLine"/>
+    </div>
+    
+    <script type="text/javascript" src="js/stairApp.js" ></script>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿body
+{
+    font-family:'Century Gothic', Arial, Verdana;
+    color:#333;
+    font-size:16px;
+}
+
+#wrapper{
+    width:90%;
+    max-width:960px;
+    margin:0 auto;
+}
+#header {
+    width: 100%;
+    border-bottom: 4px solid #396a77;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+
+
+#header img{
+    width:535px;
+    height:88px;
+}
+
+#formContainer {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #efefef;
+    padding:15px;
+}
+
+.resultsWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #efefef;
+    padding: 15px;
+    min-height:500px;
+}
+
+/*#tileContainer {
+    box-sizing: border-box;
+    width: 25%;
+}*/
+h1{
+    font-size:18pt;
+    font-weight:300;
+}
+
+.formAreas{
+  
+}
+
+#btnSubmit {
+   
+    border: 1px solid #203c43;
+}
+
+#tbName {
+   
+    width: 200px;
+   
+}
+
+input, select {
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+}
+
+.submitContainer{
+    width:100%;
+   
+    text-align:right;
+}
+
+.hrLine {
+    width: 100%;
+    border-top: 1px solid #396a77;
+    display: block;
+    margin-top: 25px;
+}
+
+#imgLink{
+    border:none;
+
+}
+image{
+    border:none;
+}
+
+.ulSelect{
+    padding-top:10px;
+    margin-top:0px;
+}
+
+.h2Results{
+    font-weight:bold;
+    font-size:16px;
+}
+
